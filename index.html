@@ -5,6 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Minigame</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <script src="main.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <main class="game">
+      <img src="img/background.png" alt="background" class="game__background" />
+      <div class="game__UI">
+        <button class="game__playBtn visible"><i class="fas fa-play"></i></button>
+        <button class="game__stopBtn"><i class="fas fa-stop"></i></button>
+        <div class="game__timer">00:00</div>
+        <div class="game__counter">0</div>
+      </div>
+      <div class="game__over">
+        <button class="game__resetBtn"><i class="fas fa-undo-alt"></i></button>
+        <div>YOU WON! 🎉</div>
+      </div>
+      <div class="game__mainarea"></div>
+    </main>
+  </body>
 </html>
